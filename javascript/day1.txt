@@ -1,0 +1,84 @@
+****conditions****
+1.const ak=5,ak2='5';
+  if(ak===ak2) (gives true for == ,false for ===)
+  == only checks if values are equal,=== checks if thier datatypes are equal.
+
+2.if((x >= 10 && x%2 == 0)||(x < 10 && x%2 != 0))
+
+3.let output = x%2===0?'even':'odd';
+
+4.let x;
+    if(x==1){
+        cosole.log('Sunday');
+    }
+    else if(x==2){
+        cosole.log('Monday');
+    }
+    else if(x==3){
+        cosole.log('Tuesday');
+    }
+    else if(x==4){
+        cosole.log('Wednesday');
+    }
+    else if(x==5){
+        cosole.log('Thursday');
+    }
+    else if(x==6){
+        cosole.log('Friday');
+    }
+    else if(x==7){
+        cosole.log('Saturday');
+    }
+
+5.switch(x){
+    case 1:
+        cosole.log('Sunday');
+        break;
+    case 2:
+        cosole.log('Monday');
+        break;
+    case 3:
+        cosole.log('Tuesday');
+        break;
+    case 4:
+        cosole.log('Wednesday');
+        break;
+    case 5:
+        cosole.log('Thursday');
+        break;
+    case 6:
+        cosole.log('Friday');
+        break;
+    case 7:
+        cosole.log('Saturday');
+        break;
+    default:
+        cosole.log('Sunday');
+        break;    
+}
+
+******functions*****
+
+1.function expressions cannot be called before they are defined unlike function declaration.
+
+2.const x=(parameters)=>{
+    }
+    parameters are included in parenthesis then a right arrow is required.we can write our code inside the braces{}
+    single line function do not need braces.
+
+3.function addition(x,y){
+    return x+y;
+     }
+
+4.const mul=function (x,y){
+    return x*y;
+}
+
+5.const sub=(x,y) =>{
+    retur x-y;
+}
+
+6.const stringrev=function(x){
+    return x.reverse();
+    }
+    stringrev(y);

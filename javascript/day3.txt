@@ -1,0 +1,73 @@
+******objects*****
+1.let obj={
+a:'b',c:'d'
+};
+for(let temp in obj){
+    console.log(temp+':'+obj.temp);
+}
+
+2.x={'a':1,'b':2}
+delete x['a'];
+
+3.let x={a:'1'};
+y=x;
+y.a='2';
+console.log(x);
+yes the value changes in x when we change the value of a in y cuz objects are passed by references.
+
+4.x={'a':1};
+const y=Object.assign({},x);
+console.log(y);
+
+5.
+	const obj1 = {
+		name: 'Ram',
+		age: 21
+	};
+
+	const obj2 = {
+		name: 'Ram',
+		age: 21
+	};
+
+	const haveSameData = function (obj1, obj2) {
+		const obj1Length = Object.keys(obj1).length;
+		const obj2Length = Object.keys(obj2).length;
+
+		if (obj1Length === obj2Length) {
+			return Object.keys(obj1).every(
+				key => obj2.hasOwnProperty(key)
+					&& obj2[key] === obj1[key]);
+		}
+		return false;
+	}
+	document.write(haveSameData(obj1, obj2));
+
+    ****classes****
+
+    1.class Queue extends Array{
+    enqueue(e){
+        super.unshift(e);
+    }
+    deque(){
+        super.pop();
+    }
+    front(){
+        return !this.isEmpty() ? this[0] : undefined;
+    }
+    isEmpty(){
+        return this.length===0;
+    }
+}
+
+2.instanceof operator is to determine if a constructor’s prototype appears in the prototype chain of an object.
+
+function inst(x) {
+  this.x = x;
+}
+
+let tem = new inst(2);
+
+console.log(tem instanceof inst);
+returns true cuz tem is instance of inst.
+
