@@ -44,13 +44,16 @@ function getProcessedData(url) {
 }
 
 async function getProcessedData(url) {
+let ak;
     try{
-        let ak=await downloadData(url);
-        retrun downloadFallbackData(ak);
-    }
+        ak=await downloadData(url);
+   }
   catch {
-      return processDataInWorker(ak) ;
+      ak = await downloadFallbackData(url);
     }
+        return  processDataInWorker(ak) ;
 }
+
+
 
 
